@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function CTA(){ return <section className="cta"><div className="container cta-inner"><div><p className="eyebrow">Build the next play with us</p><h2>Every young person deserves a team that believes in them.</h2></div><div className="button-row"><Link className="button gold" href="/contact">Get involved</Link><a className="button ghost" href="mailto:Simone.Harris@teamdunk.net">Email Team Dunk</a></div></div></section> }
