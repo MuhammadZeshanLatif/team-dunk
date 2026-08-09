@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const links=[['Programs','/programs'],['Dunkiverse','/dunkiverse'],['Impact','/team-dunk-ghana'],['Shop','/shop'],['Resources','/blog'],['About','/about']];
+const links=[['Programs','/programs'],['Dunkiverse','/dunkiverse'],['Team Dunk Ghana','/team-dunk-ghana'],['Shop','/shop'],['Resources','/blog'],['About','/about']];
 export default function Header(){const [open,setOpen]=useState(false);const path=usePathname();return <>
   <div className="announcement">◉ &nbsp; Little Dunk LIVE is going to Ghana — August 2026 &nbsp; →</div>
   <header className="ref-header"><div className="ref-nav container">
