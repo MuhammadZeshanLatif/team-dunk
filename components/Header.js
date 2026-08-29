@@ -10,6 +10,6 @@ export default function Header(){const [open,setOpen]=useState(false);const path
   <header className="ref-header"><div className="ref-nav container">
     <Link href="/" className="ref-logo"><Image src="/images/team/team-dunk-logo-transparent.webp" alt="Team Dunk logo" width={110} height={110} priority/></Link>
     <button className="menu-button" onClick={()=>setOpen(!open)} aria-label="Toggle navigation"><i/><i/><i/></button>
-    <nav className={open?'ref-links open':'ref-links'} aria-label="Main navigation">{links.map(([label,href])=><Link className={path===href?'active':''} href={href} key={label} onClick={()=>setOpen(false)}>{label}</Link>)}<Link className="ref-involved" href="/contact">Get Involved</Link><Link className="ref-donate" href="/contact">Donate</Link></nav>
+    <nav className={open?'ref-links open':'ref-links'} aria-label="Main navigation">{links.map(([label,href])=><Link className={path===href?'active':''} href={href} key={label} onClick={()=>setOpen(false)}>{label}</Link>)}<Link className={'ref-involved'+(path==='/sponsor'?' active':'')} href="/sponsor" onClick={()=>setOpen(false)}>Become a Sponsor</Link><Link className="ref-donate" href="/donate" onClick={()=>setOpen(false)}>Donate</Link></nav>
   </div></header></>}
 
